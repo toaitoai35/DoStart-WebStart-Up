@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DoStart</title>
-  <link rel="icon" href="img/icon.png">
+  <title>Dostart - Startup Landing Page</title>
+  <link rel="icon" href="img/favicon.png">
   <link rel='stylesheet' href='css/style.css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
@@ -17,6 +17,14 @@
   <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="css/modal-video.min.css">
+
+<script src="/js/jquery-modal-video.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 
 <body>
@@ -26,7 +34,7 @@
       <label for="check" class="check-btn">
         <i class="fa fa-bars"></i>
       </label>
-      <a href="index.html"><img src="img/logo.png" class="logo">
+      <a href="index.html"><img src="img/logo.png" id="logo">
         <ul>
           <li><a href="#" style="color: #FF5A6E">HOME
               <i id="icon-down" class="fas fa-chevron-down" style="font-size:11px"></i>
@@ -46,12 +54,12 @@
                 </a>
             </ul>
           </li>
-          <li><a href="#">ABOUT</a>
-          <li><a href="#">FEATURES</a>
-          <li><a href="#">OVERVIEW</a>
-          <li><a href="#">PRICING</a>
-          <li><a href="#">TEAM</a>
-          <li><a href="#">CONTACT</a>
+          <li><a href="#about">ABOUT</a>
+          <li><a href="#feature">FEATURES</a>
+          <li><a href="#works">OVERVIEW</a>
+          <li><a href="#price">PRICING</a>
+          <li><a href="#teams">TEAM</a>
+          <li><a href="#contacts">CONTACT</a>
           <li><span class="vertical-line"></span>
           <li><a href="index.html" class="btn-login">LOGIN</a>
         </ul>
@@ -74,9 +82,9 @@
         <div class="col-sm-4 col-md-5 table1">
 
           <h2>Sign Up Today And Receive <a style="color:#FF5A6E; font-weight:800">30 Days</a> FREE Trial.</h2>
-          <input type="text" class="input" name="username" placeholder="Name*">
-          <input type="email" class="input" name="text" placeholder="Email*">
-          <input type="password" class="input" name="text" placeholder="Password*">
+          <input type="text" class="input" name="username" placeholder="  Name*">
+          <input type="email" class="input" name="text" placeholder="  Email*">
+          <input type="password" class="input" name="text" placeholder="  Password*">
           <button type="button" class="btn-register">Register For Free</button>
         </div>
       </div>
@@ -126,7 +134,7 @@
       </div>
     </div>
   </div>
-  <div class="about">
+  <div id="about">
     <div class="container">
       <div class="row">
         <div class="col-md-4">
@@ -148,7 +156,8 @@
       </div>
     </div>
   </div>
-  <div class="feature">
+ 
+  <div id="feature">
     <h3>OUR <a style="color:#FF5A6E">FEATURES</a></h3>
     <p>Checkout Our Leatest Features</p>
     <hr>
@@ -204,6 +213,7 @@
       </div>
     </div>
   </div>
+
   <div class="stories">
     <div class="container-fluid">
       <div class="row">
@@ -242,7 +252,8 @@
       </div>
     </div>
   </div>
-  <div class="work">
+ 
+  <div class="work" id="works">
     <h3>HOW <a style="color:#FF5A6E">WE WORK</a></h3>
     <p>Checkout Our Amazing Working Process</p>
     <hr>
@@ -271,6 +282,7 @@
       </div>
     </div>
   </div>
+  
   <div class="work2">
     <div class="container">
       <div class="row">
@@ -308,7 +320,7 @@
         </div>
         <div class="col-md-6 col-sm-6">
           <div class="content3">
-            <div class="inner">
+            <div class="inners">
               <h1>Literature Surrounded Insensible At Indulgence Admiration Mutual</h1>
               <p>Consulted or acuteness dejection an smallness if. Outward general passage another as it. Very his are
                 come man walk one next. partiality</p>
@@ -331,7 +343,577 @@
     </div>
 
   </div>
+  
+  <div class="plan" id="price">
+    <h3>PRICING <a style="color:#FF5A6E">PLAN</a></h3>
+     <p>List Of Our Pricing Packages</p>
+    <hr>
+    <div class="pricing-table-area">
+      <div class="container">
+         
+
+         <div class="row">
+            <div class="col-md-4">
+              
+               <div class="single-table">
+                <i class="fab fa-angellist item3"></i>
+                  <h4>TRIAL VERSION</h4>
+                  <h2>Free</h2>
+                  <hr>
+                  <ul>
+                    <li>Demo file <span data-toggle="tooltip" data-placement="top" title="Available on pro version"><i class="fas fa-info-circle"></i></span></li>
+                    <li>Update</li>
+                    <li>File compressed</li>
+                    <li>Commercial use</li>
+                    <li>Support <span data-toggle="tooltip" data-placement="top" title="Available on pro version"><i class="fas fa-info-circle"></i></span></li>
+                    <li>2 database</li>
+                    <li>Documetation <span data-toggle="tooltip" data-placement="top" title="Available on pro version"><i class="fas fa-info-circle"></i></span></li>
+                  </ul>
+                  <a href="#" class="btn-try">TRY FOR FREE</a>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="single-table regular">
+                 <div class="top-table">
+                <i class="fas fa-ribbon item4"></i>
+                
+                <h4>REGULAR</h4>
+                <h2><sup style="font-size:25px ;font-weight: 400; top: -0.6cm;">$</sup>29<span>/ Year</span></h2>
+               <hr>
+               </div>
+                <ul>
+                  <li>Demo file</li>
+                  <li>Update <span data-toggle="tooltip" data-placement="top" title="Only for extended licence"><i class="fas fa-info-circle"></i></span></li>
+                  <li>File compressed</li>
+                  <li>Commercial use</li>
+                  <li>Support <span data-toggle="tooltip" data-placement="top" title="Only for extended licence"><i class="fas fa-info-circle"></i></span></li>
+                  <li>5 database</li>
+                  <li>Documetation</li>
+                </ul>
+                <a href="#" class="btn-start">GET STARTED</a>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="single-table">
+                <i class="far fa-gem item3"></i>
+                <h4>Extended</h4>
+                <h2><sup style="font-size:25px ;font-weight: 400; top: -0.6cm;">$</sup>59<span>/ Year</span></h2>
+               <hr>
+                <ul>
+                  <li>Demo file</li>
+                                <li>Update</li>
+                                <li>File compressed</li>
+                                <li>Commercial use</li>
+                                <li>Support</li>
+                                <li>8 database</li>
+                                <li>Documetation</li>
+                </ul>
+                <a href="#" class="btn-try">GET STARTED</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+  </div>
+ 
+ 
+  <div class="team" id="teams">
+    <h3>INNOVATIVE <a style="color:#FF5A6E">TEAM</a></h3>
+    <p>Meet Our Awesome And Expert Team Members</p>
+    <hr>
+    <div class="wrapper hai">
+      <div class="container">
+      <div class="row">
+          <div class="col-md-6 col-lg-4">
+              <div class="card info">
+                <img src="img/info1.jpg" class="card-img-top" alt="...">
+                <div class="content-info">
+                  <h4>I love my Studio</h4>
+          <p>Jointure goodness interest debating did outweigh. Is time from them full my gone in went Of no introduced</p>
+          <div class="socials">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-dribbble"></i></a>
+        </div>  
+                </div>
+                <i class="far fa-envelope-open item5"></i>
+                <div class="card-body">
+                  <h5 class="card-title">Ahmed Kamal</h5>
+                <h6>CHAIRMAN OF SOFTING</h6>
+
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4">
+  <div class="card info">
+    <img src="img/info2.jpg" class="card-img-top" alt="...">
+    <div class="content-info">
+      <h4>Connecting People</h4>
+<p>Jointure goodness interest debating did outweigh. Is time from them full my gone in went Of no introduced</p>
+<div class="socials">
+<a href="#"><i class="fa fa-facebook"></i></a>
+<a href="#"><i class="fa fa-youtube"></i></a>
+<a href="#"><i class="fa fa-linkedin"></i></a>
+<a href="#"><i class="fa fa-dribbble"></i></a>
+</div>  
+    </div>
+    <i class="far fa-envelope-open item5"></i>
+    <div class="card-body">
+      <h5 class="card-title">Drunal Park</h5>
+    <h6>Manager of Softing</h6>
+
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4">
+  <div class="card info">
+    <img src="img/info3.jpg" class="card-img-top" alt="...">
+    <div class="content-info">
+      <h4>Network Builder</h4>
+<p>Jointure goodness interest debating did outweigh. Is time from them full my gone in went Of no introduced</p>
+<div class="socials">
+<a href="#"><i class="fa fa-facebook"></i></a>
+<a href="#"><i class="fa fa-youtube"></i></a>
+<a href="#"><i class="fa fa-linkedin"></i></a>
+<a href="#"><i class="fa fa-dribbble"></i></a>
+</div>  
+    </div>
+    <i class="far fa-envelope-open item5"></i>
+    <div class="card-body">
+      <h5 class="card-title">Munia Ankor</h5>
+    <h6>Founder of Softing</h6>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="review">
+  <h3>CUSTOMER <a style="color:#FF5A6E">REVIEW</a></h3>
+  <p>What People Say About Us</p>
+ <hr>
+ <div class="wrapper3">
+  <div class="carousel3 owl-carousel">
+    <div class="card card2-1">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="img/info4.jpg" class="info4" style="width: 90%;">
+         
+          
+        </div>
+        <div class="col-md-8">
+          <span class="vertical-line3"></span>
+          <blockquote></blockquote>
+          <p> 
+            Understood instrument or do connection no appearance do invitation. Dried quick round it or order. Add past see west felt did any. plate you share. My resolve arrived is we chamber be removal. 
+        </p>
+        <h4>Bubhan Kritha</h4>
+        <h5>Web Developer</h5>
+        </div>
+      </div>
+      
+    </div>
+    <div class="card card2-1">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="img/info5.jpg" class="info4" style="width: 90%;">
+         
+          
+        </div>
+        <div class="col-md-8">
+          <span class="vertical-line3"></span>
+          <blockquote></blockquote>
+          <p> 
+            Understood instrument or do connection no appearance do invitation. Dried quick round it or order. Add past see west felt did any. plate you share. My resolve arrived is we chamber be removal. 
+        </p>
+        <h4>Junl Sarukh</h4>
+        <h5>Software Engineer</h5>
+        </div>
+      </div>
+    </div>
+    <div class="card card2-1">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="img/info6.jpg" class="info4" style="width: 90%;">
+         
+          
+        </div>
+        <div class="col-md-8">
+          <span class="vertical-line3"></span>
+          <blockquote></blockquote>
+          <p> 
+            Understood instrument or do connection no appearance do invitation. Dried quick round it or order. Add past see west felt did any. plate you share. My resolve arrived is we chamber be removal. 
+        </p>
+        <h4>Makhon Daino</h4>
+        <h5>Compnay Owner</h5>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+<div class="question">
+  <h3>QUESTION AND <a style="color:#FF5A6E">REVIEW</a></h3>
+  <p>Most Common And Important Answer</p>
+  <hr>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 video">
+        <img src="img/video.jpg" class="pic-video">
+        <div class="inner">
+        <a href="#" data-video-id="jgZkrA8E5do" class="btn-play2"><i class="fas fa-play"></i></a>
+        
+        <h4>Answer with video</h4>
+        </div>
+      </div>
+      <div class="col-md-6 word">
+        <div id="accordion">
+          <h3><span>1</span> Do I need a business plan?<i>></i><hr></h3>
+          
+          <div>
+            <p>
+              She wholly fat who window extent either formal. Removing welcomed civility or hastened is. Justice elderly but perhaps expense six her are another passage. Full her ten open fond walk not down.For request general express unknown are.
+            </p>
+            <p>
+              He in just mr door body held john down he. So journey greatly or garrets. Draw door kept do so come on open mean. Estimating stimulated how reasonably precaution diminution she simplicity sir but.</p>
+              <hr style="margin-left: 10px; margin-top:-10px;width:95%; ">
+          </div>
+          
+          <h3><span>2</span>  How long should a business plan be? <i>></i><hr></h3>
+          <div>
+            <p>
+              She wholly fat who window extent either formal. Removing welcomed civility or hastened is. Justice elderly but perhaps expense six her are another passage. Full her ten open fond walk not down.For request general express unknown are.
+          </p>
+          <p>
+               He in just mr door body held john down he. So journey greatly or garrets. Draw door kept do so come on open mean. Estimating stimulated how reasonably precaution diminution she simplicity sir but.
+          </p>
+          <hr style="margin-left: 10px; margin-top:-10px;width:95%; ">
+          </div>
+          <h3><span>3</span> Do I need a business plan?<i>></i><hr></h3>
+          <div>
+            <p>
+              She wholly fat who window extent either formal. Removing welcomed civility or hastened is. Justice elderly but perhaps expense six her are another passage. Full her ten open fond walk not down.For request general express unknown are.
+          </p>
+          <p>
+               He in just mr door body held john down he. So journey greatly or garrets. Draw door kept do so come on open mean. Estimating stimulated how reasonably precaution diminution she simplicity sir but.
+          </p>
+          <hr style="margin-left: 10px; margin-top:-10px;width:95%; ">
+          </div>
+          <h3><span>4</span> Do I need a business plan?<i>></i></h3>
+          <div>
+            <p>
+              She wholly fat who window extent either formal. Removing welcomed civility or hastened is. Justice elderly but perhaps expense six her are another passage. Full her ten open fond walk not down.For request general express unknown are.
+          </p>
+          <p>
+               He in just mr door body held john down he. So journey greatly or garrets. Draw door kept do so come on open mean. Estimating stimulated how reasonably precaution diminution she simplicity sir but.
+          </p>
+          </div>
+        </div>
+    </div>
+  </div>
+ </div>
+</div>
+<div class="blog">
+  <h3>LATEST <a style="color:#FF5A6E">BLOG</a></h3>
+  <p>Have A Look To Our Latest Blog</p>
+  <hr>
+  <div class="wrapper">
+    <div class="carousel owl-carousel">
+      <div class="card card3-1">
+        <img src="img/footer4.jpg" class="img-card3">
+        <div class="inner-img">
+          <a href="#">startup</a>
+          <a href="#">business</a>
+        </div>
+        <div class="content-card3">
+          <h2>Become latter but nor abroad wisdom waited</h2>
+          <div class="meta">
+            <ul>
+                <li><a href="#"><i class="fas fa-user"></i> USER</a></li>
+                <li><i class="fas fa-calendar-alt "></i> 12 Nov, 2019</li>
+                <li><a href="#"><i class="fas fa-comments"></i> 23</a></li>
+            </ul>
+        </div>
+        <p>
+          Friendship sufficient assistance can prosperous met. As game he show it park do. Was has unknown few certain
+        </p>
+        <hr>
+        <a href="#" class="more-btn">Read More <i class="fas fa-angle-double-right"></i></a>
+        </div>
+      </div>
+      <div class="card card3-2">
+        <img src="img/footer1.jpg" class="img-card3">
+        <div class="inner-img">
+          <a href="#">asset</a>
+          <a href="#">earning</a>
+        </div>
+        <div class="content-card3">
+          <h2>Attended desirous raptures declared assistance</h2>
+          <div class="meta">
+            <ul>
+                <li><a href="#"><i class="fas fa-user"></i> USER</a></li>
+                <li><i class="fas fa-calendar-alt "></i> 12 Nov, 2019</li>
+                <li><a href="#"><i class="fas fa-comments"></i> 23</a></li>
+            </ul>
+        </div>
+        <p>
+          Friendship sufficient assistance can prosperous met. As game he show it park do. Was has unknown few certain
+        </p>
+        <hr>
+        <a href="#" class="more-btn">Read More <i class="fas fa-angle-double-right"></i></a>
+        </div>
+      </div>
+      <div class="card card3-3">
+        <img src="img/footer2.jpg" class="img-card3">
+        <div class="inner-img">
+          <a href="#">success</a>
+          <a href="#">product</a>
+        </div>
+        <div class="content-card3">
+          <h2>Justice improve age article between projection</h2>
+          <div class="meta">
+            <ul>
+                <li><a href="#"><i class="fas fa-user"></i> USER</a></li>
+                <li><i class="fas fa-calendar-alt "></i> 12 Nov, 2019</li>
+                <li><a href="#"><i class="fas fa-comments"></i> 23</a></li>
+            </ul>
+        </div>
+        <p>
+          Friendship sufficient assistance can prosperous met. As game he show it park do. Was has unknown few certain
+        </p>
+        <hr>
+        <a href="#" class="more-btn">Read More <i class="fas fa-angle-double-right"></i></a>
+        </div>
+      </div>
+      <div class="card card3-4">
+        <img src="img/footer3.jpg" class="img-card3">
+        <div class="inner-img">
+          <a href="#">startup</a>
+          <a href="#">business</a>
+        </div>
+        <div class="content-card3">
+          <h2>Prosperous continuing entreat unreserved</h2>
+          <div class="meta">
+            <ul>
+                <li><a href="#"><i class="fas fa-user"></i> USER</a></li>
+                <li><i class="fas fa-calendar-alt "></i> 12 Nov, 2019</li>
+                <li><a href="#"><i class="fas fa-comments"></i> 23</a></li>
+            </ul>
+        </div>
+        <p>
+          Friendship sufficient assistance can prosperous met. As game he show it park do. Was has unknown few certain
+        </p>
+        <hr>
+        <a href="#" class="more-btn">Read More <i class="fas fa-angle-double-right"></i></a>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+  <div class="contact" id="contacts">
+    <h3>CONTACT <a style="color:#FF5A6E">US</a></h3>
+    <p>Do You Have Any Questions?</p>
+    <hr>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 table-contact">
+<h2>Let's Talk About Your Idea</h2>
+<div class="form-table">
+<input class="txt-name" type="text" placeholder=" Name" name="name">
+<div class="txt">
+      <input id="txt-email" type="email" placeholder=" Email*" name="email">
+      
+  
+  
+      <input id="txt-phone" type="phone" placeholder=" Phone" name="phone">
+  </div>
+</div>
+<textarea class="txt-textarea" id="comments" name="comments" placeholder=" Tell Us About Project *"></textarea>
+<a href="#" class="btn-send-message">SEND MESSAGE<i class="fa fa-paper-plane"></i></a>
+        </div>
+        
+        </div>
+        <div class="col-md-5 right">
+          <ul class="info6">
+            <li>
+                <h4>Office Location</h4>
+                <hr>
+                <i class="fas fa-map-marked-alt icon-contact"></i> 
+                <span>22 Baker Street,</span><br> 
+                <span style="margin-left:110px">London, United Kingdom,<br>W1U 3BW</span>
+            </li>
+            <li>
+                <h4 style="margin-left:-100px">Phone</h4>
+                <hr>
+                <i class="fas fa-phone icon-contact" style="margin-left: 10px;line-height:20px"></i>
+                <span>+44-20-7328-4499 </span><br><span style="margin-left:70px">+99-34-8878-9989</span>
+            </li>
+            <li>
+              <h4 style="margin-left:-100px">Email</h4>
+                <hr>
+                <i class="fas fa-envelope-open icon-contact" style="margin-left: 30px;"></i>
+                <span>info@yourdomain.com</span><br><span style="margin-left:100px">admin@yourdomain.com</span>
+            </li>
+            <li>
+              <h4>SOCIAL ADDRESS</h4>
+                <hr>
+                <div class="socials">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                  <a href="#"><i class="fa fa-youtube"></i></a>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                  <a href="#"><i class="fa fa-dribbble"></i></a>
+              </div>  
+            </li>
+        </ul>
+        </div>
+      </div>
+     
+    </div>
+   <div class="map">
+   
+   
+      <div class="container-full">
+          <div class="row">
+              <div class="google-maps">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14767.262289338461!2d70.79414485000001!3d22.284975!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1424308883981"></iframe>
+              </div>
+          </div>
+      
+  </div>
+</div>
+<div class="footer">
+  <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-6 lane1" >
+          <img src="/img/logo.png" alt="Logo">
+          <p>
+              Celebrated conviction stimulated principles day. Sure fail or in said west. Right my front it wound cause fully am sorry if. She jointure goodness interest debating did outweigh.
+          </p>
+          <hr>
+          <h5>Follow Us</h5>
+          <div class="socials2">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                  <a href="#"><i class="fa fa-dribbble"></i></a>
+              </div>  
+          
+          
+        </div>
+        <div class="col-md-2 col-sm-6 lane2">
+          <h4>Company</h4>
+          <ul>
+              <li>
+                  <a href="#">Home</a>
+              </li>
+              <li>
+                  <a href="#">About us</a>
+              </li>
+              <li>
+                  <a href="#">Compnay History</a>
+              </li>
+              <li>
+                  <a href="#">Features</a>
+              </li>
+              <li>
+                  <a href="#">Blog Page</a>
+              </li>
+          </ul>
+        </div>
+        <div class="col-md-2 col-sm-6 lane3">
+          <h4>Resources</h4>
+          <ul>
+              <li>
+                  <a href="#">Career</a>
+              </li>
+              <li>
+                  <a href="#">Leadership</a>
+              </li>
+              <li>
+                  <a href="#">Strategy</a>
+              </li>
+              <li>
+                  <a href="#">Services</a>
+              </li>
+              <li>
+                  <a href="#">History</a>
+              </li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-sm-6 lane4">
+          <h4>Contact Info</h4>
+                      <p>
+                           Possible offering at contempt mr distance stronger an. Attachment excellence announcing
+                      </p>
+                      <div class="address">
+                          <ul>
+                              <li>
+                                  <div class="icon2">
+                                      <i class="fas fa-home"></i> 
+                                  </div>
+                                  <div class="info5">
+                                      <h5>Website:</h5>
+                                      <span>www.validtheme.com</span>
+                                  </div>
+                              </li>
+                              <li>
+                                  <div class="icon2">
+                                      <i class="fas fa-envelope"></i> 
+                                  </div>
+                                  <div class="info5">
+                                      <h5>Email:</h5>
+                                      <span>support@validtheme.com</span>
+                                  </div>
+                              </li>
+                              <li>
+                                  <div class="icon2">
+                                      <i class="fas fa-phone"></i> 
+                                  </div>
+                                  <div class="info5">
+                                      <h5>Phone:</h5>
+                                      <span>+44-20-7328-4499</span>
+                                  </div>
+                              </li>
+                          </ul>
+                      </div>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="footer2">
+  <div class="container">
+    <div class="row">
+        
+            <div class="col-md-6">
+                <p>&copy; Copyright 2019. All Rights Reserved by <a href="#">validthemes</a></p>
+            </div>
+            <div class="col-md-6 left" >
+                <ul>
+                    <li>
+                        <a href="#">Terms</a>
+                    </li>
+                    <li>
+                        <a href="#">Privacy</a>
+                    </li>
+                    <li>
+                        <a href="#">Support</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    
+</div>
+</div>
   <script>
+  $(".btn-play2").modalVideo();
     $(".carousel").owlCarousel({
       margin: 20,
 
@@ -353,11 +935,11 @@
         }
       }
     });
-    $(".carousel2").owlCarousel({
+    $(".carousel2, .carousel3").owlCarousel({
       margin: 20,
       loop: true,
       autoplay: true,
-      autoplayTimeout: 2000,
+      autoplayTimeout: 4000,
       autoplayHoverPause: true,
       responsive: {
         0: {
@@ -374,7 +956,9 @@
         }
       }
     });
-
+    $( function() {
+    $( "#accordion" ).accordion();
+  } );
   </script>
 
 </body>
