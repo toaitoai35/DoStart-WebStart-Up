@@ -25,9 +25,13 @@
 
 <script src="/js/jquery-modal-video.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+
 </head>
 
 <body>
+
   <div id="navbar">
     <nav>
       <input type="checkbox" id="check">
@@ -36,7 +40,7 @@
       </label>
       <a href="index.html"><img src="img/logo.png" id="logo">
         <ul>
-          <li><a href="#" style="color: #FF5A6E">HOME
+          <li><a id="home" href="#">HOME<hr>
               <i id="icon-down" class="fas fa-chevron-down" style="font-size:11px"></i>
             </a>
             <ul>
@@ -54,12 +58,12 @@
                 </a>
             </ul>
           </li>
-          <li><a href="#about">ABOUT</a>
-          <li><a href="#feature">FEATURES</a>
-          <li><a href="#works">OVERVIEW</a>
-          <li><a href="#price">PRICING</a>
-          <li><a href="#teams">TEAM</a>
-          <li><a href="#contacts">CONTACT</a>
+          <li><a href="#about">ABOUT<hr></a>
+          <li><a href="#feature">FEATURES<hr></a>
+          <li><a href="#works">OVERVIEW<hr></a>
+          <li><a href="#price">PRICING<hr></a>
+          <li><a href="#teams">TEAM<hr></a>
+          <li><a href="#contacts">CONTACT<hr></a>
           <li><span class="vertical-line"></span>
           <li><a href="index.html" class="btn-login">LOGIN</a>
         </ul>
@@ -137,10 +141,10 @@
   <div id="about">
     <div class="container">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 col-sm-6">
           <img src="img/body1.svg" class="body1">
         </div>
-        <div class="col-md-7 content2">
+        <div class="col-md-7 col-sm-6 content2">
           <h3>WHY CHOSE US</h3>
           <h5>Designed for startups</h5>
           <h5>with expert developer</h5>
@@ -178,7 +182,7 @@
             </div>
             <div class="col-md-5 col-sm-6 equal-height" style="height: 223px;">
 
-              <div class="item">
+              <div class="item" id="item1-1">
                 <i class="far fa-comments item1"></i>
                 <h3>Support Chat</h3>
                 <p>Affronting everything discretion men now own did. Still round</p>
@@ -195,10 +199,10 @@
                 <p>Delighted prevailed supported remainder perpetual who</p>
               </div>
             </div>
-            <div class="col-md-1">
+            <div class="col-md-1 ">
             </div>
             <div class="col-md-5 col-sm-6 equal-height" style="height: 223px;">
-              <div class="item-box">
+              <div class="item-box" id="item-box-1">
                 <i class="fab fa-stumbleupon-circle item2"></i>
                 <h3>First Run</h3>
 
@@ -253,11 +257,11 @@
     </div>
   </div>
  
-  <div class="work" id="works">
+   <div class="work" id="works">
     <h3>HOW <a style="color:#FF5A6E">WE WORK</a></h3>
     <p>Checkout Our Amazing Working Process</p>
     <hr>
-    <div class="container">
+   <div class="container">
       <div class="row">
         <div class="col-md-6 col-sm-6">
           <img src="img/body4.jpg" class="body4">
@@ -418,7 +422,7 @@
   </div>
  
  
-  <div class="team" id="teams">
+  <div class="team" id="teams"> 
     <h3>INNOVATIVE <a style="color:#FF5A6E">TEAM</a></h3>
     <p>Meet Our Awesome And Expert Team Members</p>
     <hr>
@@ -491,7 +495,7 @@
 </div>
 </div>
 </div>
-</div>
+</div> 
 
 <div class="review">
   <h3>CUSTOMER <a style="color:#FF5A6E">REVIEW</a></h3>
@@ -564,7 +568,7 @@
   <hr>
   <div class="container">
     <div class="row">
-      <div class="col-md-6 video">
+      <div class="col-md-6 col-sm-6 video">
         <img src="img/video.jpg" class="pic-video">
         <div class="inner">
         <a href="#" data-video-id="jgZkrA8E5do" class="btn-play2"><i class="fas fa-play"></i></a>
@@ -572,7 +576,7 @@
         <h4>Answer with video</h4>
         </div>
       </div>
-      <div class="col-md-6 word">
+      <div class="col-md-6 col-sm-6 word">
         <div id="accordion">
           <h3><span>1</span> Do I need a business plan?<i>></i><hr></h3>
           
@@ -718,13 +722,14 @@
   </div>
 </div>
 
+
   <div class="contact" id="contacts">
     <h3>CONTACT <a style="color:#FF5A6E">US</a></h3>
     <p>Do You Have Any Questions?</p>
     <hr>
     <div class="container">
       <div class="row">
-        <div class="col-md-7 table-contact">
+        <div class="col-md-7 col-sm-6 table-contact">
 <h2>Let's Talk About Your Idea</h2>
 <div class="form-table">
 <input class="txt-name" type="text" placeholder=" Name" name="name">
@@ -735,13 +740,14 @@
   
       <input id="txt-phone" type="phone" placeholder=" Phone" name="phone">
   </div>
+  <input class="txt-phone" type="phone" placeholder=" Phone" name="phone">
 </div>
 <textarea class="txt-textarea" id="comments" name="comments" placeholder=" Tell Us About Project *"></textarea>
 <a href="#" class="btn-send-message">SEND MESSAGE<i class="fa fa-paper-plane"></i></a>
         </div>
         
         </div>
-        <div class="col-md-5 right">
+        <div class="col-md-5 col-sm-6 right">
           <ul class="info6">
             <li>
                 <h4>Office Location</h4>
@@ -773,7 +779,7 @@
               </div>  
             </li>
         </ul>
-        </div>
+        </div> 
       </div>
      
     </div>
@@ -785,8 +791,12 @@
               <div class="google-maps">
                   <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14767.262289338461!2d70.79414485000001!3d22.284975!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1424308883981"></iframe>
               </div>
-          </div>
+              
+            </div>
       
+  </div>
+  <div class="container-full s">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14767.262289338461!2d70.79414485000001!3d22.284975!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1424308883981"></iframe>
   </div>
 </div>
 <div class="footer">
@@ -913,6 +923,7 @@
 </div>
 </div>
   <script>
+
   $(".btn-play2").modalVideo();
     $(".carousel").owlCarousel({
       margin: 20,
